@@ -2,16 +2,19 @@
   <div class="row">
     <div class="col-lg-6 col-md-8 mx-auto">
       <h1 class="fw-light">Selamat Datang</h1>
-      <img class="img-fluid round ed-circle-10" src="/logo.png" alt="Placeholder image" width="100">
+      <img class="img-fluid round ed-circle-10" src="/logomimha.png" alt="Placeholder image" width="500">
       <p class="lead text-body-secondary">
-        Islamic Digital Education Platform
+      <%# Perpustakaan Sekolah %>
       </p>
+      <br>
       <p class="lead text-body-secondary">
-        Dreizehn Soft Edukasi adalah platform pembelajaran digital yang menyediakan berbagai macam materi pembelajaran yang dapat diakses oleh siapa saja, kapan saja, dan dimana saja.
+        Inilah tempat di mana cerita-cerita menunggu untuk ditemukan, di mana pengetahuan melintasi batas-batas. 
+        Ini lebih dari sekadar perpustakaan, ini adalah tempat di mana impian diwujudkan dan pengetahuan dibagikan.
+        <b>Selamat datang di perpustakaan kami,</b>  di mana setiap klik membuka dunia baru yang menakjubkan.
       </p>
       <% unless current_user %>
       <p>
-        <a href="<%= new_user_session_path %>" class="btn btn-primary my-2">Login Untuk Memulai</a>
+        <a href="<%= new_user_session_path %>" class="btn btn-primary my-2">Masuk Untuk Mulai Membaca</a>
       </p>
       <% end %>
     </div>
@@ -26,7 +29,7 @@
         <div class="col">
           <div class="card mb-4 shadow-sm">
             <%# <a href="<%= campaigns_path %>
-              <img src="/quran.webp" class="bd-placeholder-img card-img-top" width="100%">
+              <img src="/kelas7.jpg" class="bd-placeholder-img card-img-top" width="100%">
             </a>
             <div class="card-body">
               <p class="card-text text-center">
@@ -37,7 +40,7 @@
         </div>
         <div class="col">
           <div class="card mb-4 shadow-sm">
-            <img src="/hadits.webp" class="bd-placeholder-img card-img-top" width="100%">
+            <img src="/kelas8.jpeg" class="bd-placeholder-img card-img-top" width="100%">
             <div class="card-body">
               <p class="card-text text-center">
                 Buku Pelajaran kelas 8
@@ -48,7 +51,7 @@
         <div class="col">
           <div class="card mb-4 shadow-sm">
             <%# <a href="<%= campaigns_path %>
-              <img src="/kitabisa.webp" class="bd-placeholder-img card-img-top" width="100%">
+              <img src="/kelas9.jpg" class="bd-placeholder-img card-img-top" width="100%">
             </a>
             <div class="card-body">
               <p class="card-text text-center">
