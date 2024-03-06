@@ -14,9 +14,14 @@ class BooksTest < ApplicationSystemTestCase
     visit books_url
     click_on "New book"
 
+    fill_in "Cover", with: @book.cover
     fill_in "Page", with: @book.page
     fill_in "Pdf", with: @book.pdf
+    fill_in "Publish at", with: @book.publish_at
+    fill_in "Synopsis", with: @book.synopsis
     fill_in "Title", with: @book.title
+    fill_in "Translator", with: @book.translator
+    fill_in "View count", with: @book.view_count
     click_on "Create Book"
 
     assert_text "Book was successfully created"
@@ -27,9 +32,14 @@ class BooksTest < ApplicationSystemTestCase
     visit book_url(@book)
     click_on "Edit this book", match: :first
 
+    fill_in "Cover", with: @book.cover
     fill_in "Page", with: @book.page
     fill_in "Pdf", with: @book.pdf
+    fill_in "Publish at", with: @book.publish_at
+    fill_in "Synopsis", with: @book.synopsis
     fill_in "Title", with: @book.title
+    fill_in "Translator", with: @book.translator
+    fill_in "View count", with: @book.view_count
     click_on "Update Book"
 
     assert_text "Book was successfully updated"

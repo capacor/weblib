@@ -4,8 +4,18 @@ one:
   title: MyString
   page: MyString
   pdf: MyString
+  cover: MyString
+  translator: MyString
+  synopsis: MyString
+  publish_at: MyString
+  view_count: MyString
 
 two:
   title: MyString
   page: MyString
   pdf: MyString
+  cover: MyString
+  translator: MyString
+  synopsis: MyString
+  publish_at: MyString
+  view_count: MyString
